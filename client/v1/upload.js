@@ -48,6 +48,7 @@ Upload.photo = function (session, streamOrPath, uploadId, name) {
             upload_id: predictedUploadId
         })
         .transform(function(opts){
+            opts.media_type = 1;
             opts.formData.photo = {
                 value: stream,
                 options: {
