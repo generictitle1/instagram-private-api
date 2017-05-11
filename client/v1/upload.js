@@ -44,6 +44,7 @@ Upload.photo = function (session, streamOrPath, uploadId, name) {
         .generateUUID()
         .setData({
             image_compression: JSON.stringify(compresion),
+            media_type: 1,
             upload_id: predictedUploadId
         })
         .transform(function(opts){
