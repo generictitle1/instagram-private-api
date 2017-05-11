@@ -36,6 +36,7 @@ Upload.photo = function (session, streamOrPath, uploadId, name) {
         "lib_version": "1.3.0",
         "quality": "92"
     }
+    console.log("RA");
     var predictedUploadId = uploadId || new Date().getTime();
     var filename = (name || "pending_media_")+predictedUploadId+".jpg"
     var request = new Request(session)
